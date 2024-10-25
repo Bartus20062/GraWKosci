@@ -3,33 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:layout_width="match_parent">
+    android:background="#F5F5DC"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/TextView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#A52A2A"
-        android:textColor="@color/white"
         android:gravity="center"
         android:padding="10dp"
         android:text="Gra w Kości Autor:Bartosz Posiła"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="-16dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="421dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="800dp"
+        android:id="@+id/button1"
+        android:layout_width="454dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="784dp"
         android:background="@color/black"
         android:text="Rzuć Kośćmi"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TextView1"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="451dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="476dp"
+        android:background="#D2691E"
+        android:text="Resetuj wynik"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="536dp"
+        android:text="Liczba Rzutów: 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="632dp"
+        android:text="Wynik Twojego Losowania: 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="592dp"
+        android:text="Wynik Gry: 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
